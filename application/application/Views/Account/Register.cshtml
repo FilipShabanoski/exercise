@@ -1,0 +1,76 @@
+﻿@model application.Models.AccountModels.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form asp-action="Register" method="post">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="Email" type="email" class="form-control" placeholder="name@example.com" />
+                <label asp-for="Email"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="Password" type="password" class="form-control" placeholder="password" />
+                <label asp-for="Password"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="PhoneNumber" type="tel" class="form-control" placeholder="071xxxxxx" />
+                <label asp-for="PhoneNumber"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="Name" type="text" class="form-control" placeholder="name" />
+                <label asp-for="Name"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="Address" type="text" class="form-control" placeholder="address" />
+                <label asp-for="Address"></label>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="IdNo" type="text" class="form-control" placeholder="idno" />
+                <label asp-for="IdNo"></label>
+            </div>
+            <br />
+        </div>
+        <br />
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="ClientTypeId" type="text" class="form-control" placeholder="clientTypeId" />
+                <label asp-for="ClientTypeId"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="CityId" type="text" class="form-control" placeholder="cityId" />
+                <label asp-for="CityId"></label>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="form-floating mb-3">
+                <input asp-for="CountryId" type="text" class="form-control" placeholder="countryId" />
+                <label asp-for="CountryId"></label>
+            </div>
+            <br />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+    </div>
+</form>
